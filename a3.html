@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun1()">click me!</button>
+    <p id="time"></p>
+    <p id="result"></p>
+    <script>
+        function fun1() {
+            var msg;
+            var t= new Date().getHours();
+
+            if(t < 10) {
+                msg = "good morning mam"
+            }
+
+             else if(t < 18) {
+                msg = "good day students"
+            }
+        
+            else {
+                 msg = "good evening students"
+            }    
+        
+        document.getElementById("time").innerHTML = "time:" + t + "hr";
+        document.getElementById("result").innerHTML = msg;
+        }
+    </script>
+</body>
+</html>

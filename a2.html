@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=10;
+        var y=20;
+        var z=30;
+        {
+            var x=100;
+            let y=200;
+            const z=300;
+            document.write("inside scope:")
+            document.write("x=", x, "<br>")
+            document.write("y=", y, "<br>")
+            document.write("z=", z, "<br>")
+        }
+        document.write("outside scope:")
+            document.write("x=", x, "<br>")
+            document.write("y=", y, "<br>")
+            document.write("z=", z, "<br>")
+    </script>
+</body>
+</html>
